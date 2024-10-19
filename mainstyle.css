@@ -349,5 +349,10 @@ iframe {
         background-color: rgb(16, 16, 16);
         padding: 1rem;
         gap: 1rem;
+        
+    }
+    header.info{
+        position: relative;
+        top: -70px;
     }
 }
