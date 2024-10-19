@@ -59,7 +59,7 @@ section {
 }
 
 .nl-container {
-    background-color: rgb(16, 16, 16);
+    background-color: black;
     padding: 10px 0;
     height: 58px;
     position: fixed;
