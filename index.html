@@ -58,7 +58,7 @@
             // Check if user exists and credentials match
             let user = users.find(user => user.email === email && user.password === password);
             if (user) {
-                alert("Login successful!");
+                // alert("Login successful!");
                 window.location.href = "./mainindex.html"; // Redirect to the main website
             } else {
                 alert("Incorrect email or password.");
