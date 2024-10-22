@@ -39,7 +39,7 @@
             <div class="login__register">
                 Don't have an account? <a href="./register.html">Register</a>
                 <br>
-                <!-- <a href="./index.html">Back to Car Rental</a> -->
+                <!-- <a href="./mainindex.html">Back to Car Rental</a> -->
             </div>
         </form>
     </div>
@@ -59,7 +59,7 @@
             let user = users.find(user => user.email === email && user.password === password);
             if (user) {
                 // alert("Login successful!");
-                window.location.href = "./index.html"; // Redirect to the main website
+                window.location.href = "./mainindex.html"; // Redirect to the main website
             } else {
                 alert("Incorrect email or password.");
             }
