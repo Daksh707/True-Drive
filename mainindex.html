@@ -25,7 +25,6 @@
                     <i class="ri-lock-2-fill"></i>
                 </div>
             </div>
-
             <div class="login__check">
                 <div class="login__check-box">
                     <input type="checkbox" class="login__check-input" id="user-check">
@@ -35,17 +34,19 @@
             </div>
 
             <button type="submit" class="login__button">Login</button>
-
             <div class="login__register">
-                Don't have an account? <a href="./register.html">Register</a>
+                Don't have an account? <a href="./register.html">Register</a> 
                 <br>
-                <!-- <a href="./mainindex.html">Back to Car Rental</a> -->
+                <a href="./index.html">Back to Car Rental</a>
             </div>
+            <!-- Added Guest option button -->
+            <button type="button" class="login__button guest__button" id="guest-button">Continue as Guest</button>
         </form>
     </div>
 
     <script src="script.js"></script>
     <script>
+        // Login form submission
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent form from submitting
 
@@ -59,11 +60,28 @@
             let user = users.find(user => user.email === email && user.password === password);
             if (user) {
                 // alert("Login successful!");
-                window.location.href = "./mainindex.html"; // Redirect to the main website
+                window.location.href = "./index.html"; // Redirect to the main website
             } else {
                 alert("Incorrect email or password.");
             }
         });
+        
+        // Guest button functionality
+        document.getElementById('guest-button').addEventListener('click', function() {
+            window.location.href = "./index.html"; // Redirect to main page as guest
+        });
     </script>
+    
+    <style>
+        /* Additional styles for guest button */
+        .guest__button {
+            background-color: #7d7d7d;
+            margin-top: 10px;
+        }
+        
+        .guest__button:hover {
+            background-color: #666666;
+        }
+    </style>
 </body>
 </html>
